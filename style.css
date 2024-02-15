@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+*{
+   margin: 0;
+   padding: 0;
+}
+body{
+   font-family: 'Bebas Neue', sans-serif;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   overflow: hidden;
+   flex-direction: column;
+   margin: 0;
+}
+.container{
+   text-align: right;
+}
+
+#timeZone{
+   font-size: 30px;
+   color: hsl(0, 0%, 50%);
+   letter-spacing: 5px;
+   margin-right: 10px;
+}
+#currentTime{
+   font-size: 120px;
+   letter-spacing: 10px;
+}
+#displayTime{
+   font-size: 40px;
+
+   letter-spacing: 3px;
+}
+button i{
+   font-size: 30px;
+   color: hsl(0, 0%, 50%);
+}
+button{
+   background: none;
+   border: none;
+   outline: none;
+   cursor: pointer;
+}
+#modal-1{
+   border: 1px solid #333;
+   padding: 2rem;
+   display: none;
+   position: absolute;
+   width: 500px;
+   height: 100px;
+   z-index: 99;
+   background-color: #fff;
+   border-radius: 4px;
+}
+#modal-1.is-open {
+   display: block;
+   
+}
+#timezone-select{
+   width: 80%;
+   padding: 1rem 10px;
+   font-size: 15px;
+   margin: 10px 20px 0 0;
+}
+#apply-button{
+   font-size: 18px;
+}
+
+/* Create a class for the dark body background */
+.modal-overlay.dark {
+   background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+ }
+ 
+ /* Use the `dark` class only when the modal is open */
+ body.modal-open .modal-overlay {
+   background-color: rgba(0, 0, 0, 0.5); /* Same rule as above */
+ }

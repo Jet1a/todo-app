@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Time Display</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/adb8b056b6.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="topic" style="display: flex; justify-content: end; align-items: center;">
+         <h1 id="timeZone"></h1>
+         <button id="edit-btn"><i class="fa-solid fa-pen-to-square"></i></button>
+      </div>
+      <h1 id="currentTime"></h1>
+      <h1 id="displayTime"></h1>
+    </div>
+
+    <div id="modal-1" class="modal" aria-hidden="true">
+      <div class="modal-content">
+        <header class="modal-header">
+          <h2 class="modal-title">Change Timezone</h2>
+        </header>
+        <div class="modal-body">
+          <select id="timezone-select">
+            <option value="" disabled selected>Pick your timezone</option>
+            <option value="Asia/Bangkok">Bangkok</option>
+            <option value="Europe/London">London</option>
+            <option value="America/New_York">New York</option>
+            <option value="Asia/Tokyo">Tokyo</option>
+            <option value="Europe/Berlin">Berlin</option>
+          </select>
+          <button id="apply-button">Apply</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="bundle.js"></script>
+  </body>
+</html>
